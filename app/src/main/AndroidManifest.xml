@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.x.demo">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/xgame_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/xgame_app_icon"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="BT_APPID"
+            android:value="chengdg" />
+        <meta-data
+            android:name="BT_GAMEID"
+            android:value="40" />
+        <meta-data
+            android:name="BT_AGENT"
+            android:value="default" />
+        <meta-data
+            android:name="APP_KEY"
+            android:value="53210f0171a462f3558c39b1062d58cf" />
+    </application>
+
+</manifest>

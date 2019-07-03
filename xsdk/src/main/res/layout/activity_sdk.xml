@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/sdk_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录" />
+    <EditText
+        android:id="@+id/sdk_charge_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入充值金额"
+        android:text="1"
+        android:inputType="number|numberDecimal"
+        android:maxLength="8"
+        android:maxLines="1" />
+    <Button
+        android:id="@+id/sdk_charge_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="充值" />
+    <Button
+        android:id="@+id/sdk_setrole_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置角色" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在接入前要和新纪元游戏这边的技术人员索要appid,appkey,gameid,agent" />
+</LinearLayout>

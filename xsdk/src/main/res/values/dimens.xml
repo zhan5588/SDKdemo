@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--竖屏SlidingMenu菜单的宽度-->
+    <dimen name="portrait_behind">300dp</dimen>
+    <!--横屏SlidingMenu菜单的宽度-->
+    <dimen name="landscap_behind">500dp</dimen>
+</resources>

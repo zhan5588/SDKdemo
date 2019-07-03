@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- progress涉及的style -->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--圆角布局-->
+    <declare-styleable name="RCRelativeLayout">
+        <!--圆形-->
+        <attr name="round_as_circle" format="boolean"/>
+        <!--全部圆角半径-->
+        <attr name="round_corner" format="integer|dimension"/>
+        <!--针对各个角的半径-->
+        <attr name="round_corner_top_left" format="integer|dimension"/>
+        <attr name="round_corner_top_right" format="integer|dimension"/>
+        <attr name="round_corner_bottom_left" format="integer|dimension"/>
+        <attr name="round_corner_bottom_right" format="integer|dimension"/>
+
+        <!--描边颜色／半径-->
+        <attr name="stroke_color" format="color|reference"/>
+        <attr name="stroke_width" format="integer|dimension"/>
+    </declare-styleable>
+
+    <!--圆角webview-->
+    <declare-styleable name="cornersWebView">
+        <attr name="top_left" format="float"/>
+        <attr name="top_right" format="float"/>
+        <attr name="bottom_left" format="float"/>
+        <attr name="bottom_right" format="float"/>
+    </declare-styleable>
+     <!--<declare-styleable name="ProgressWebViewContainer">
+           <attr name="childVerticalSpace" format="dimension"/>
+           <attr name="childHorizontalSpace" format="dimension"/>
+           <attr name="columnNum" format="integer"/>
+       </declare-styleable>-->
+
+</resources>

@@ -1,0 +1,82 @@
+<resources>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+
+    <!-- 进度条的webview -->
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#ff6900</item>
+        <item name="progress_reached_color">#ff6900</item>
+        <item name="progress_text_visibility">invisible</item>
+        <item name="progress_text_size">0sp</item>
+        <item name="progress_text_color">#00a2ff</item>
+        <item name="progress_reached_bar_height">3dp</item>
+        <item name="progress_unreached_bar_height">0dp</item>
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+    </style>
+
+    <!-- 对话框样式 -->
+    <style name="PersonCenterDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationLeftFade</item>
+    </style>
+
+    <!-- 无遮罩对话框样式 -->
+    <style name="MyDialogNoMask" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊背景-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <!--对话框弹出动画1  进入从右往左，退出从左往右-->
+    <style name="MyAnim1" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/right_to_left</item>
+        <item name="android:windowExitAnimation">@anim/left_to_right</item>
+    </style>
+    <!--对话框弹出动画2  进入从下往上，退出从上往下-->
+    <style name="MyAnim2" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/down_to_up</item>
+        <item name="android:windowExitAnimation">@anim/up_to_down</item>
+    </style>
+    <!--对话框弹出动画3  进入从左往右，退出从右往左-->
+    <style name="MyAnim3" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/left_to_right</item>
+        <item name="android:windowExitAnimation">@anim/right_to_left</item>
+    </style>
+
+    <!--个人中心样式-->
+    <style name="personCenterStyle" parent="@android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AnimationLeftFade">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+
+</resources>
